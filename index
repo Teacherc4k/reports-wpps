@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>C4K Report Comment Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f4f4f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 1rem 1.5rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.4rem;
+    }
+
+    header p {
+      margin: 0.35rem 0 0;
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 1.5rem auto 2rem;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 1.5rem;
+    }
+
+    @media (max-width: 800px) {
+      main {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .card {
+      background: white;
+      border-radius: 0.75rem;
+      padding: 1.25rem 1.5rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+      border: 1px solid #e5e7eb;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
+      color: #111827;
+    }
+
+    .card p.helper {
+      margin-top: 0;
+      font-size: 0.85rem;
+      color: #6b7280;
+    }
+
+    label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #374151;
+      margin-bottom: 0.2rem;
+    }
+
+    .required::after {
+      content: " *";
+      color: #dc2626;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select,
+    textarea {
+      width: 100%;
+      box-sizing: border-box;
+      padd
